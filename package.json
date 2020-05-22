@@ -8,15 +8,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/FReeeZzze/server-NodeJS.git"
+    "url": "git+https://github.com/FReeeZzze/course_work.git"
   },
   "keywords": [],
   "author": "Maxim Bezrukov",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/FReeeZzze/server-NodeJS/issues"
+    "url": "https://github.com/FReeeZzze/course_work/issues"
   },
-  "homepage": "https://github.com/FReeeZzze/server-NodeJS#readme",
+  "homepage": "https://github.com/FReeeZzze/course_work.git#readme",
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.19.0",
