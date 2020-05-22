@@ -1,10 +1,9 @@
 {
-  "name": "server-NodeJS",
+  "name": "course_work",
   "version": "1.0.0",
-  "description": "server NodeJS,Express,MongoDB",
-  "main": "index.js",
+  "description": "server NodeJS with Express, MySql",
+  "main": "server/server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon index"
   },
   "repository": {
@@ -12,7 +11,7 @@
     "url": "git+https://github.com/FReeeZzze/server-NodeJS.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Maxim Bezrukov",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/FReeeZzze/server-NodeJS/issues"
@@ -26,11 +25,9 @@
     "express": "^4.17.1",
     "express-session": "^1.17.0",
     "fs-extra": "^8.1.0",
-    "mongodb": "^3.5.0",
-    "mongoose": "^5.8.7",
-    "mongoose-extend-schema": "^1.0.0",
     "morgan": "^1.9.1",
     "multer": "^1.4.2",
+    "mysql2": "^2.1.0",
     "node-pre-gyp": "^0.14.0",
     "passport": "^0.4.1"
   },
@@ -41,7 +38,6 @@
     "eslint-config-prettier": "^6.10.0",
     "eslint-plugin-prettier": "^3.1.2",
     "jsonwebtoken": "^8.5.1",
-    "mongoose-schema-extend": "^0.2.2",
     "nodemon": "^2.0.2",
     "passport-jwt": "^4.0.0",
     "prettier": "1.19.1"

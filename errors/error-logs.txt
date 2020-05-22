@@ -1,9 +1,0 @@
-{ _id: 5e3e966f37c71f25b0de0609,
-  errors_code:
-   { code: 'f3f80c7',
-     error: 'Cannot read property \'length\' of undefined' },
-  createdAt: 2020-02-08T11:07:27.439Z,
-  updatedAt: 2020-02-08T11:07:27.439Z,
-  __v: 0 }{ _id: 5e3e9b7bb3b6700e7c514930,
-  code: 'f525f524',
-  error: 'Cannot read property \'length\' of undefined' }

@@ -1,6 +1,8 @@
+const { useErr, client } = require('../config');
+
 const header = (req, res, next) => {
     // Website you wish to allow to connect
-    res.setHeader('Access-Control-Allow-Origin', 'http://localhost:3000');
+    res.setHeader('Access-Control-Allow-Origin', client);
 
     // Request methods you wish to allow
     res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
@@ -16,4 +18,18 @@ const header = (req, res, next) => {
     next();
 };
 
-module.exports = header;
+const errors = (err, req, res, next) => {
+    if (err) {
+        useErr(err, () => {
+            res.statusCode = 500;
+            res.send({ error: err.message });
+        });
+    }
+    next();
+};
+
+module.exports = {
+    header,
+    errors,
+    useErr,
+};
