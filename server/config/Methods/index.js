@@ -1,4 +1,5 @@
-const { appendFile, readFileSync } = require('fs-extra');
+const { appendFile, readFileSync, remove, mkdir } = require('fs-extra');
+const { editString } = require('./manipulations');
 const { createInterface } = require('readline');
 
 // -------------------------------------------- //
@@ -35,7 +36,29 @@ const useErr = (err, callback) => {
     });
 };
 
+const removeFiles = (params) => {
+    const dir = editString(__dirname, '\\', 0, 4) + `\\${editString(params, '\\', 0, 4)}`;
+    remove(dir, (err) => {
+        if (err) return console.log('remove dir error: ', err.message);
+        console.log('\n - - files and directory deleted successfully - - \n');
+    });
+};
+
+const createDir = (rootDir, filename, name_of_type, callback) => {
+    const DIR = `${rootDir}/${filename}/${name_of_type}`;
+    mkdir(DIR, { recursive: false }, (err) => {
+        if (err) {
+            console.log('createDir err: ', err);
+            throw err;
+        }
+        callback(null, DIR);
+    });
+};
+
 module.exports = {
     useErr,
     questionForLookLogs,
+    removeFiles,
+    createDir,
+    editString,
 };

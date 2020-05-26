@@ -32,7 +32,7 @@ const MainApp = async () => {
             }
             console.log(`Подключен к базе: ${dbName}`);
             app.listen(PORT, HOST, () => {
-                console.log(`> Сервер стартовал: ${dev ? `http://${HOST}:${PORT}` : `http://${HOST}:${PORT}`}`);
+                console.log(`> Сервер стартовал: ${dev ? `http://${HOST}:${PORT}` : `https://${HOST}:${PORT}`}`);
             });
         });
         app.use((req, res) => {
