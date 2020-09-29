@@ -1,3 +1,7 @@
 [2020-5-22 22:02:33] - Error: Access denied for user 'root'@'localhost' (using password: YES)
 [2020-5-24 17:28:43] - Error: Access denied for user 'root'@'localhost' (using password: YES) 
 [2020-5-26 16:19:37] - Error: Multipart: Boundary not found 
+[2020-5-27 14:57:22] - TypeError: Cannot read property 'mimetype' of undefined 
+[2020-5-27 15:11:56] - TypeError: Cannot read property 'mimetype' of undefined 
+[2020-5-27 15:13:59] - TypeError: Cannot read property 'mimetype' of undefined 
+[2020-5-27 15:15:34] - TypeError: Cannot read property 'mimetype' of undefined 

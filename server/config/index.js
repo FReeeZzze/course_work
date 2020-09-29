@@ -12,7 +12,7 @@ const client = dev ? `http://${HOST}:3000` : `https://tel.redw.me`;
 const configConnection = {
     host: 'localhost',
     user: 'root',
-    database: 'course_work',
+    database: 'cityTN',
     password: 'JOJOkaka2020',
     dateStrings: true,
     multipleStatements: true,

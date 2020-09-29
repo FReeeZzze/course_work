@@ -1,2 +1,0 @@
-id,FirstName,LastName,MiddleName,Phone,Street,House,Flat,contract
-6,Maksim,Bezrukov,Vladimirovich,123123,Valchenko,55,120,2

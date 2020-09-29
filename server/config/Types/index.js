@@ -1,4 +1,4 @@
 module.exports = {
-    csv: 'text/csv',
+    csv: 'application/vnd.ms-excel',
     txt: 'text/plain',
 };
